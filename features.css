@@ -1,0 +1,112 @@
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
+}
+
+.text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
+
+
+.custom-card {
+  text-decoration: none;
+}
+
+.card {
+  transition: transform .2s;
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 280px;
+  max-height: 280px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.hover-text {
+
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0 ;
+  transition: .5s ease;
+}
+
+.card-content {
+  padding: 5px;
+  color: black;
+  font-family: Helvetica;
+}
+
+.custom-card:hover .card {
+  transform: scale(1.03);
+}
+
+.custom-card:hover .overlay {
+  opacity: 0.9;
+}
+
+.custom-card:hover .hover-text {
+  opacity: 1;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
+
+.header-background {
+  background-image: url('./fondo4.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Esto asegura que la imagen de fondo cubra todo el contenedor */
+  animation: fadein 2s;
+  height: 450px;
+}
+
+/* Esta regla se aplica solo cuando la anchura de la pantalla es 992px o más, que es típicamente el tamaño en el que las pantallas se consideran grandes */
+@media (min-width: 992px) {
+  .header-background {
+      /* Aquí puedes poner el tamaño que quieras para pantallas grandes */
+      height: 550px;
+  }
+}
