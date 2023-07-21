@@ -14,3 +14,12 @@
   outline: 0;
 }
 
+.custom-btn {
+  background-color: #FBCEB1 !important;
+  color: #ffffff !important;
+}
+
+.custom-btn:hover {
+  background-color: #ff8583 !important;  /* Cambia a tu color de hover deseado */
+  color: #ffffff !important;
+}
