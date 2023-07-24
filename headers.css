@@ -23,3 +23,8 @@
   background-color: #ff8583 !important;  /* Cambia a tu color de hover deseado */
   color: #ffffff !important;
 }
+
+.nav-item a:hover {
+  color: #FBCEB1 ; /* Cambia a tu color preferido */
+}
+
