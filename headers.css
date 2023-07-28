@@ -21,7 +21,7 @@
 
 .custom-btn:hover {
   background-color: #ff8583 !important;  /* Cambia a tu color de hover deseado */
-  color: #ffffff !important;
+  color: hsla(0, 0%, 96%, 0.842) !important;
 }
 
 .nav-item a:hover {
