@@ -97,7 +97,7 @@
 
 
 .header-background {
-  background-image: url('./fondo4.jpeg');
+  background-image: url('./src/images/landin/logo/fondo4.jpeg');
   background-repeat: no-repeat;
   background-size: cover; /* Esto asegura que la imagen de fondo cubra todo el contenedor */
   animation: fadein 2s;

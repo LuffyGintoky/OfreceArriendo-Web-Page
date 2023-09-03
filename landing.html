@@ -1,0 +1,178 @@
+<!-- Landin-->  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  var images = ['./src/images/landin/logo/fondo4.jpeg', './src/images/landin/logo/fondo3.jpeg', './src/images/landin/logo/fondo5.jpeg', './src/images/landin/logo/fondo6.jpeg']; // Reemplaza con la ruta o URL de tus imágenes
+  var i = 0;
+
+  setInterval(function() {
+      $('.header-background').css('background-image', 'url(' + images[i] + ')');
+      i++;
+      if (i == images.length) {
+          i = 0;
+      }
+  },3000); // Cambia la imagen cada 5000 milisegundos (5 segundos)
+</script>
+
+<header class="bg-dark py-5 header-background">
+  <div class="container px-5">
+      <div class="row gx-5 align-items-center justify-content-center" style="margin-top: -50px;">
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
+              <div class="my-5 text-center text-xl-start">
+                  <h1 class="display-5 fw-bolder text-white mb-2">Compra, Arrienda o Permuta!</h1>
+                  <p class="lead fw-normal text-white-50 mb-4">Propiedades en la region de Antofagasta.</p>
+                  <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                      <a class="btn btn-outline-light btn-lg px-4" href="#antofa">Antofagasta</a>
+                      <a class="btn btn-outline-light btn-lg px-4" href="#calama">Calama</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="./logo.jpg" alt="..."></div>
+      </div>
+  </div>
+</header>
+
+
+
+
+<!-- Features-->
+
+<div class="container px-4 py-5 " id="custom-cards">
+  <h2 id="antofa" class="pb-2 border-bottom ">Propiedades en Antogagasta</h2>
+
+  <div id="antofaTargetas" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 d-flex justify-content-center align-items-center">
+
+    <div class="col ">
+      <a href='#casasAntofagasta' class="custom-card">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('foto2.jpeg');">
+          <div class="overlay"></div>
+          <div class="hover-text" style="font-size: 30px;" >Casas</div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="col">
+      <a href="#departamentosAntofagasta" class="custom-card">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('foto8.jpg');">
+          <div class="overlay"></div>
+          <div class="hover-text" style="font-size: 30px;">Departamentos</div>
+        </div>
+      </a>
+    </div>
+    
+  </div>
+
+</div>
+
+<div class="container px-4 py-5" id="custom-cards">
+  <h2 id="calama" class="pb-2 border-bottom">Propiedades en Calama</h2>
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 d-flex justify-content-center align-items-center">
+
+    <div class="col">
+      <a href="#casasCalama" class="custom-card">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('foto2.jpeg');">
+          <div class="overlay"></div>
+          <div class="hover-text" style="font-size: 30px;" >Habitacional</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="#comercialCalama" class="custom-card">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('foto6.jpeg');">
+          <div class="overlay"></div>
+          <div class="hover-text" style="font-size: 30px;" >Comercial</div>
+        </div>
+      </a>
+    </div>      
+  </div> 
+</div>
+
+
+
+
+  <!--Conctact-->
+
+<div class="container px-4 py-5 " >
+  <h2 class="pb-2 border-bottom"></h2>
+  <div class="background">
+    <div class="container my-custom-class">
+      <div class="screen ">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACTANOS</span>
+              
+            </div>
+            <div class="app-contact">Numero de Contacto : +56982287533</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="NOMBRE" >
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="EMAIL">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="TELEFONO">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="MENSAJE">
+              </div>
+              <div class="app-form-group buttons">
+                
+                <button class="app-form-button">ENVIAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credits">
+        
+        <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank"></a>
+          <svg class="dribbble" viewBox="0 0 200 200">
+            <g stroke="#ffffff" fill="none">
+              
+             
+            </g>
+          </svg>
+          
+        </a>
+      </div>
+    </div>
+  </div>
+</div> 
+ 
+
+<!--direcion uviacion gfoole maps-->
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="geo-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+  </symbol>
+</svg>
+
+<div class="col d-flex align-items-start mx-10" style="margin-top: -20px; margin-left: 150px;">
+  <svg class="bi text-body-secondary flex-shrink-0 me-3 mx-10" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+  <div>
+    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Dirección</h3>
+    <p>14 de febrero 1985,  Antofagasta</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
