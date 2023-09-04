@@ -29,7 +29,14 @@
 }
 
 
-.navbar {
+.header {
   height: 60px;
   /* Otros estilos del navbar... */
 }
+
+.navbar-container {
+  height: 60px;  /* o cualquier altura que desees */
+  overflow: hidden;  /* para evitar que el contenido exceda el contenedor */
+}
+
+
