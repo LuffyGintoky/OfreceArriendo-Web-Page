@@ -64,6 +64,7 @@
             <li class="nav-item"><a id ='btnCasas' href="#" class="nav-link">Casas</a></li>
             <li class="nav-item"><a id = 'btnDepartamentos' href="#" class="nav-link">Departamentos</a></li>
             <li class="nav-item"><a id = 'btnComercial' href="#" class="nav-link">Comercial</a></li>
+            <li class="nav-item"><a id = 'btnTerreno' href="#" class="nav-link">Terreno</a></li>
             <li class="nav-item"><a id = href="#" class="nav-link"> 
               
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -129,18 +130,24 @@
         const btnCasas = document.getElementById('btnCasas');
         const btnDepartamentos = document.getElementById('btnDepartamentos');
         const btnComercial = document.getElementById('btnComercial');
+        const btnTerreno = document.getElementById('btnTerreno');
 
         // Todos los botones visibles por defecto
         btnCasas.style.display = '';
         btnDepartamentos.style.display = '';
         btnComercial.style.display = '';
+        btnTerreno.style.display = 'none';
 
         // Si estás en la vista de "antofagastaCasas" o departamentosAntofagasta:
-        if (page === 'casasAntofagasta' || page === 'departamentosAntofagasta') {
+        if (page === 'casasAntofagasta' || page === 'departamentosAntofagasta'|| page === 'terrenoantofagasta') {
             btnComercial.style.display = 'none';
+            btnTerreno.style.display = '';
+
             btnCasas.setAttribute('href', '#casasAntofagasta');
             btnDepartamentos.setAttribute('href', '#departamentosAntofagasta');
-         }
+            btnTerreno.setAttribute('href', '#terrenoantofagasta');
+         
+          }
 
          if (page === 'casasCalama' || page === 'comercialCalama') {
             btnDepartamentos.style.display = 'none';

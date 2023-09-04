@@ -43,3 +43,29 @@
 
 
 
+/* circle animation */
+
+.animation-container {
+  position: relative;
+  width: 350px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  left: 0;
+  animation: moveCircle 1.25s linear infinite;  /* Duración cambiada a 10s */
+}
+
+@keyframes moveCircle {
+  0%, 100% { left: 0; }  /* Inicia y termina en la posición inicial */
+  80% { left: 300px; }   /* Se mueve hasta el final en el 80% del tiempo */
+}
+
+
+
