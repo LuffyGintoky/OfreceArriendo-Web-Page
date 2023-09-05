@@ -1,4 +1,4 @@
-<html lang="en" data-bs-theme="dark">
+<html id='html' lang="en" data-bs-theme="dark">
   <head>
     <script src="../assets/js/color-modes.js"></script>
     <meta charset="utf-8">
@@ -31,6 +31,7 @@
     <link href="features.css" rel="stylesheet">
     <link href="headers.css" rel="stylesheet">
     <link href="casasAntStyles.css" rel="stylesheet">
+    <link href="pricing.css" rel="stylesheet">
   </head>
 
 
@@ -134,15 +135,18 @@
         const btnDepartamentos = document.getElementById('btnDepartamentos');
         const btnComercial = document.getElementById('btnComercial');
         const btnTerreno = document.getElementById('btnTerreno');
+        const htmlElement = document.getElementById('html');
 
         // Todos los botones visibles por defecto
         btnCasas.style.display = '';
         btnDepartamentos.style.display = '';
         btnComercial.style.display = '';
         btnTerreno.style.display = 'none';
+        htmlElement.setAttribute('data-bs-theme', 'dark');
+        
 
         // Si estás en la vista de "antofagastaCasas" o departamentosAntofagasta:
-        if (page === 'casasAntofagasta' || page === 'departamentosAntofagasta'|| page === 'terrenoantofagasta') {
+        if (page === 'casasAntofagasta' || page === 'departamentosAntofagasta'|| page === 'terrenoantofagasta' || page === 'pricingterreno') {
             btnComercial.style.display = 'none';
             btnTerreno.style.display = '';
 
@@ -158,6 +162,13 @@
             btnCasas.setAttribute('href', '#casasCalama');
             btnComercial.setAttribute('href', '#comercialCalama');
          }
+
+         if (page === 'pricingterreno' ) {
+          
+  
+          htmlElement.setAttribute('data-bs-theme', 'white');
+         }
+
 
        });
       }
