@@ -136,6 +136,7 @@
         const btnComercial = document.getElementById('btnComercial');
         const btnTerreno = document.getElementById('btnTerreno');
         const htmlElement = document.getElementById('html');
+        const navbar = document.querySelector('header')
 
         // Todos los botones visibles por defecto
         btnCasas.style.display = '';
@@ -164,10 +165,11 @@
          }
 
          if (page === 'pricingterreno' ) {
-          
-  
           htmlElement.setAttribute('data-bs-theme', 'white');
-         }
+          navbar.classList.add('dark-theme-nav');
+        } else {
+          navbar.classList.remove('dark-theme-nav'); // Elimina la clase para otros hashes
+        }
 
 
        });
