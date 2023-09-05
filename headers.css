@@ -43,6 +43,9 @@
 
 
 
+
+
+
 /* circle animation */
 
 .animation-container {
@@ -68,4 +71,11 @@
 }
 
 
+
+
+/* Estilo que define que los enlaces y los SVG dentro del nav tendrán color negro */
+.dark-theme-nav .nav-link, 
+.dark-theme-nav .nav-link svg {
+    color: black !important;
+}
 
