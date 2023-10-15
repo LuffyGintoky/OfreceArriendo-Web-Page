@@ -37,7 +37,7 @@ body {
 }
 
 .img-gallery img:hover{
-    transform: scale(0.8) rotate(-15deg);
+    transform: scale(0.8) ;
     border-radius: 20px;
     box-shadow: 0 32px 7px rgba(53, 53, 53, 0.2);
 
