@@ -8,12 +8,23 @@ body {
     background: #1f1f1f;
 }
 
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
 .img-gallery{
     width: 80%;
     margin: 100px auto 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 30px;
+    
 }
 
 .img-gallery img{
@@ -101,3 +112,8 @@ body {
     right: -20px; /* Alinea el botón derecho con el lado derecho de imgContainer */
 }
 
+.btn {
+    position: absolute;
+    top: 2.5em; /* Ajusta este valor según lo necesites */
+    z-index: 1; /* Esto asegura que el botón se muestre encima de la galería */
+}
