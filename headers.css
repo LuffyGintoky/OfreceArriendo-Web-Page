@@ -79,3 +79,21 @@
     color: black !important;
 }
 
+
+
+
+.custom-dropdown:hover {
+  color: #FBCEB1 !important;
+}
+
+.custom-dropdown:active {
+  color: #FBCEB1 !important;
+}
+
+.custom-dropdown:active, .custom-dropdown:focus {
+  color: #FBCEB1 !important;
+}
+
+.dropdown-item:active{
+  background-color: #1a1a1a19;
+}
