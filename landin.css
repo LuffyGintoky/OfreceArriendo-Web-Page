@@ -1,13 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+
+
+
+
+.main-container {
+    display: flex;        /* Organiza los hijos en una fila */
+    justify-content: space-between; /* Distribuye el espacio entre los hijos */
+    align-items: center;  /* Centra los hijos verticalmente */
+    width: 100%;          /* Ocupa todo el ancho disponible */
+    background: #2b323c;
+    height: 70%;
 }
 
-.container{
+.container-typed{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #2b323c;
     color:#fff;
     display: flex;
@@ -17,7 +23,24 @@
 
 }
 
-.container h1{
-    font-size: 80px;
+.container-typed, .container-right {
+    flex: 1;              /* Cada div ocupa la mitad del espacio disponible */
+    padding: 20px;        /* Espacio interior para que no estén pegados al borde */
+}
+
+.container-typed h1{
+    font-size: 70px;
     font-weight: 600;
 }
+
+.typed-cursor {
+    border-right: 0; /* Elimina el borde derecho que da la apariencia de cursor */
+    width: 70px;     /* Tamaño del círculo, puedes ajustarlo como prefieras */
+    height: 70px;
+    background-color: #fff; /* Color del círculo, se asume que será blanco como el texto */
+    border-radius: 50%;     /* Esto hace que sea un círculo */
+    display: inline-block;  /* Asegura que se muestre en línea con el texto */
+    animation: none; 
+    
+}
+

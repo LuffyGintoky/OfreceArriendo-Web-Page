@@ -1,50 +1,17 @@
 <!-- Landin-->  
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script>
-  var images = ['./src/images/landin/logo/fondo4.jpeg', './src/images/landin/logo/fondo3.jpeg', './src/images/landin/logo/fondo5.jpeg', './src/images/landin/logo/fondo6.jpeg']; // Reemplaza con la ruta o URL de tus imágenes
-  var i = 0;
-
-  setInterval(function() {
-      $('.header-background').css('background-image', 'url(' + images[i] + ')');
-      i++;
-      if (i == images.length) {
-          i = 0;
-      }
-  },3000); // Cambia la imagen cada 5000 milisegundos (5 segundos)
-</script>
-
 <header class="bg-dark py-5 header-background">
-  <div class="container px-5">
-      <div class="row gx-5 align-items-center justify-content-center" style="margin-top: -50px;">
-          <div class="col-lg-8 col-xl-7 col-xxl-6">
-              <div class="my-5 text-center text-xl-start">
-                  <h1 class="display-5 fw-bolder text-white mb-2">Compra, Arrienda o Permuta!</h1>
-                  <p class="lead fw-normal text-white-50 mb-4">Propiedades en la region de Antofagasta.</p>
-                  <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                      <a class="btn btn-outline-light btn-lg px-4" href="#casasAntofagasta">Antofagasta</a>
-                      <a class="btn btn-outline-light btn-lg px-4" href="#casasCalama">Calama</a>
-                  </div>
-
-                  <!-- 
-                    
-                    circle animation : 
-
-                  <div class="animation-container">
-                    <span class="circle"></span>
-                  </div>
-                  
-                    -->
-              </div>
-          </div>
-          <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="./logo.jpg" alt="..."></div>
+    <div class="main-container">
+      <div class="container-typed">
+          <h1 class="auto-type"></h1>
       </div>
-  </div>
-
+      <div class="container-right d-none d-md-block">
+        <div class="text-center">
+          <img class="img-fluid rounded-3" style="height: 200px; width: 450px;" src="./logo.jpg" alt="...">
+        </div>
+      </div>
+    </div>
 </header>
-
-
 
 
 
@@ -202,7 +169,7 @@
   <svg class="bi text-body-secondary flex-shrink-0 me-3 mx-10" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
   <div>
     <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Dirección</h3>
-    <p>14 de febrero 1985,  Antofagasta</p>
+    <p>Av. jaime guzman,  Antofagasta</p>
   </div>
 </div>
 

@@ -105,11 +105,11 @@ body {
 }
 
 #prevButton {
-    left: -20px; /* Alinea el botón izquierdo con el lado izquierdo de imgContainer */
+    left: -50px; /* Alinea el botón izquierdo con el lado izquierdo de imgContainer */
 }
 
 #nextButton {
-    right: -20px; /* Alinea el botón derecho con el lado derecho de imgContainer */
+    right: -50px; /* Alinea el botón derecho con el lado derecho de imgContainer */
 }
 
 .btn {

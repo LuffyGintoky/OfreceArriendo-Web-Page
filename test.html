@@ -2,21 +2,257 @@
 <html>
 <head>
 
-    <link rel="stylesheet" href="landin.css">
+  <script src="../assets/js/color-modes.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.112.5">
+  <title>Features · Bootstrap v5.3</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/features/">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+ 
+
+
+  <!-- Favicons -->
+
+  <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+  <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#712cf9">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+
+  <link href="features.css" rel="stylesheet">
+  <link href="headers.css" rel="stylesheet">
+  <link href="casasAntStyles.css" rel="stylesheet">
+  <link href="pricing.css" rel="stylesheet">
+  <link rel="stylesheet" href="landin.css">
 
 </head>
 <body>
-    <div class="container">
-        <span class="auto-type">Ofrece Arriendo</span>
+
+  <header class="bg-dark py-5 header-background">
+    <div class="main-container">
+      <div class="container-typed">
+          <h1 class="auto-type"></h1>
+      </div>
+      <div class="container-right">
+          <!-- Contenido del div de la derecha -->
+      </div>
     </div>
+  </header>
+
 
   <!-- Load library from the CDN -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
   <script>
-    var typed= new Typed('')
+    var typed = new Typed('.auto-type', {
+        strings : ['Ofrece Arriendo ', 'Compra!', 'Arrienda!','Permuta!','Antofagasta', 'Calama'],
+        typeSpeed : 25,
+        backSpeed : 25,
+        loop: true,
+        showCursor: true,
+        cursorChar: '',
+        onStringTyped: function(pos, self) {
+            // Introduce un retraso antes de cambiar los colores
+            setTimeout(function() {
+                changeColors();
+            }, self.strings[pos].length * self.options.backSpeed );
+        }
+    });
+
+
+
+
+
+    // Definir arrays de colores
+    var textColors = ['#FF5733', '#33FF57', '#3357FF', '#F733FF'];  // Ejemplo de colores para el texto
+    var backgroundColors = ['#D1EAEE','#F2E4F9','#DCE4F7','#000039','#55024A' ,'#231B42'];  // Ejemplo de colores para el fondo
+
+    // Índice para seguir la posición actual en los arrays de colores
+    var colorIndex = 0;
+
+    function changeColors() {
+      // Cambia el color del texto y del fondo usando los arrays
+      document.querySelector('.container-typed').style.backgroundColor = backgroundColors[colorIndex];
+      document.querySelector('.auto-type').style.color = textColors[colorIndex];
+
+      // Incrementa el índice para el próximo ciclo
+      colorIndex++;
+      if (colorIndex >= textColors.length) {  // Si el índice excede el tamaño de los arrays, reinícialo
+          colorIndex = 0;
+          } 
+    }
 
   </script>
+
+
+<!-- Features-->
+
+<div class="container px-4 py-5 " id="custom-cards">
+  <h2 id="antofa" class="pb-2 border-bottom ">Propiedades en Antofagasta</h2>
+
+  <div id="antofaTargetas" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 d-flex justify-content-center align-items-center">
+
+    <div class="col ">
+      <a href='#casasAntofagasta' class="custom-card">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('foto2.jpeg');">
+          <div class="overlay"></div>
+          <div class="hover-text" style="font-size: 30px;" >Casas</div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="col">
+      <a href="#departamentosAntofagasta" class="custom-card">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('foto8.jpg');">
+          <div class="overlay"></div>
+          <div class="hover-text" style="font-size: 30px;">Departamentos</div>
+        </div>
+      </a>
+    </div>
+    <div class="col ">
+      <a href='#terrenoantofagasta' class="custom-card">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('foto6.jpeg');">
+          <div class="overlay"></div>
+          <div class="hover-text" style="font-size: 30px;" >Comercial</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<div class="container px-4 py-5" id="custom-cards">
+  <h2 id="calama" class="pb-2 border-bottom">Propiedades en Calama</h2>
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 d-flex justify-content-center align-items-center">
+
+    <div class="col">
+      <a href="#casasCalama" class="custom-card">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('foto2.jpeg');">
+          <div class="overlay"></div>
+          <div class="hover-text" style="font-size: 30px;" >Habitacional</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="#comercialCalama" class="custom-card">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('foto6.jpeg');">
+          <div class="overlay"></div>
+          <div class="hover-text" style="font-size: 30px;" >Comercial</div>
+        </div>
+      </a>
+    </div>      
+  </div> 
+</div>
+
+
+
+
+  <!--Conctact-->
+
+<div class="container px-4 py-5 " >
+  <h2 class="pb-2 border-bottom"></h2>
+  <div class="background">
+    <div class="container my-custom-class">
+
+      <div class="screen ">
+
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACTANOS</span>
+              
+            </div>
+            <div class="app-contact">Numero de Contacto : +56982287533</div>
+          </div>
+
+          
+<!--contact form -->
+          <div class="screen-body-item">
+
+            <form id="myForm" action="https://formsubmit.co/ofrecearriendomensaje@gmail.com" method="POST" class="app-form">
+              <div class="app-form-group">
+                <input id="name" type="text" name="name" class="app-form-control" placeholder="NOMBRE" required>
+              </div>
+              <div class="app-form-group">
+                <input id="email" type="email" name="email" class="app-form-control" placeholder="EMAIL" required>
+              </div>
+              <div class="app-form-group">
+                <input id="phone" type="text" name="phone" class="app-form-control" placeholder="TELEFONO" required>
+              </div>
+              <div class="app-form-group message">
+                <textarea id="message" rows="4" name="mensaje" class="app-form-control" placeholder="MENSAJE"></textarea>
+              </div>
+              <div class="app-form-group buttons">
+                <input type="submit" class="app-form-button"></input>
+              </div>
+
+              <input type="hidden" name="_next" value="http://localhost:8080">
+              <input type="hidden" name="_captcha" value="false">
+            </form>
+          </div>
+
+<!--contact form -->
+        </div>
+
+      </div>
+
+      <div class="credits">
+        
+        <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank"></a>
+          <svg class="dribbble" viewBox="0 0 200 200">
+            <g stroke="#ffffff" fill="none">
+            </g>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div> 
+ 
+
+
+<!--direcion uviacion gfoole maps-->
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="geo-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+  </symbol>
+</svg>
+
+<div class="col d-flex align-items-start mx-10" style="margin-top: -20px; margin-left: 150px;">
+  <svg class="bi text-body-secondary flex-shrink-0 me-3 mx-10" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+  <div>
+    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Dirección</h3>
+    <p>14 de febrero 1985,  Antofagasta</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
