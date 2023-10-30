@@ -8,5 +8,5 @@ _Ofrece Arriendo_ is an online platform developed specifically for a small busin
 
 You can visit the live demo of the application at [https://offer-rent.example.com](https://offer-rent.example.com).
 
-...
+
 
