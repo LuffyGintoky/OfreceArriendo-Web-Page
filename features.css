@@ -317,3 +317,16 @@ body, button, input {
 .my-custom-class:hover {
   transform: scale(1.1); /* Aumenta el tamaño del contenedor */
 }
+
+
+.linkedin{
+  margin-left: 10px;
+}
+
+/* CSS para el botón con efecto hover */
+.linkedin:hover {
+  color: #fbceb1 !important; /* Color verde de WhatsApp */
+
+  /* Otras propiedades que quieras cambiar al hacer hover */
+}
+

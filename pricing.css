@@ -17,4 +17,10 @@
   max-height: 320px;
 }
 
+/* CSS para el botón con efecto hover */
+.btn-primary:hover {
+  background-color: #25D366; /* Color verde de WhatsApp */
+  border-color: #25D366;
+  /* Otras propiedades que quieras cambiar al hacer hover */
+}
 
