@@ -330,3 +330,6 @@ body, button, input {
   /* Otras propiedades que quieras cambiar al hacer hover */
 }
 
+.footer > * {
+  max-width: 70%; /* Ajusta el ancho de los elementos dentro del footer */
+}
