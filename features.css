@@ -333,3 +333,9 @@ body, button, input {
 .footer > * {
   max-width: 70%; /* Ajusta el ancho de los elementos dentro del footer */
 }
+
+.custom-height-sm {
+  min-height: 400px; /* Establece una altura mínima para pantallas pequeñas */
+  height: auto; /* Esto permite que la tarjeta crezca con el contenido si es necesario */
+}
+
