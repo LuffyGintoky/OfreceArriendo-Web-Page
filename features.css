@@ -335,7 +335,7 @@ body, button, input {
 }
 
 .custom-height-sm {
-  min-height: 400px; /* Establece una altura mínima para pantallas pequeñas */
+  min-height: 450px; /* Establece una altura mínima para pantallas pequeñas */
   height: auto; /* Esto permite que la tarjeta crezca con el contenido si es necesario */
 }
 
