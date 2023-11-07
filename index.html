@@ -316,7 +316,7 @@
 <script>
   function sendwhatsapp(buttonId){
     var phonenumber = "+56982287533";
-    var message = "Hola, me gustaria tener mas informacion sobre la propiedad " + buttonId  ; // Usa el ID del botón aquí
+    var message = "Hola, me gustaria tener mas informacion sobre " + buttonId  ; // Usa el ID del botón aquí
     var url = "https://wa.me/" + phonenumber + "?text=" + encodeURIComponent(message);
 
     window.open(url, '_blank').focus();
