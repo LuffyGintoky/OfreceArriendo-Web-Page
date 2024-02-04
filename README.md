@@ -6,7 +6,7 @@ _Ofrece Arriendo_ is an online platform developed specifically for a small busin
 
 ## Live Demo
 
-You can visit the live demo of the application at [https://www.ofrecearriendo.com/](https://www.ofrecearriendo.com/).
+You can visit the live application at [https://www.ofrecearriendo.com/](https://www.ofrecearriendo.com/).
 
 
 
